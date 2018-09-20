@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "kafka/librato/version"
 require "active_support/subscriber"
 
