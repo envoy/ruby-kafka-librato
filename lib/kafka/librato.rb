@@ -8,7 +8,7 @@ module Kafka
 
       %w[increment measure timing].each do |type|
         define_method(type) do |metric, *args|
-          Librato.send(type, "kafka.#{metric}", *args)
+          ::Librato.send(type, "kafka.#{metric}", *args)
         end
       end
 
